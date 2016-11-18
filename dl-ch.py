@@ -10,7 +10,6 @@ folder = "";
 rn = random.randrange(1000,10000);
 files = ["full.jpg","msgbg.xml","mod1.xml","mod2.xml"];
 directory = "/path/to/diir"; #remember to set this path else it won't work. the path needs to be the same path where the file is.
-datetime = time.strftime("%d/%m/%y %I:%M:%S");
 
 def download(username):
 	f = open("logs.txt", "a");
@@ -34,6 +33,5 @@ def check(username):
 		print ("No real data to collect for " + username)
 	
 
-for i in range(1,10):
-	check(sys.argv[1]);
+check(sys.argv[1]);
 
